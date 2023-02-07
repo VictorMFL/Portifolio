@@ -154,12 +154,17 @@ div.imagem-projeto {
   height: 10rem;
 }
 
+div.imagem-projeto img {
+  max-width: 90%;
+  height: 100%;
+}
+
 .nome-projeto {
   padding: 1rem 0;
 }
 
 .descricao-projeto {
-  padding-bottom: 1rem ;
+  padding-bottom: 1rem;
 }
 
 .tec-usadas {
@@ -184,7 +189,7 @@ div.imagem-projeto {
   height: 20px;
   background-image: url(../imagens/link.png);
   background-size: cover;
-} 
+}
 
 .link-projeto:hover {
   text-decoration: underline;
