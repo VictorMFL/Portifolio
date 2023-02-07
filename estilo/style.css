@@ -1,127 +1,192 @@
 @charset "UTF-8";
 
 :root {
-    --corPrincipal: #181B1F;
-    --corSecundaria: #0e0e0e;
-    --corTextodestaque: #4972a0;
-    --corTexto: #fff;
+  --corPrincipal: #181b1f;
+  --corSecundaria: #0e0e0e;
+  --corTextodestaque: #4972a0;
+  --corTexto: #fff;
 
-    --fontePrincipal: Arial, Helvetica, sans-serif;
+  --fontePrincipal: Arial, Helvetica, sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, 
+body,
 html {
-    background-color: var(--corPrincipal);
+  background-color: var(--corPrincipal);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 header {
-    width: 100%;
-    min-height: 4rem;
-    padding: 0 6rem;
-    background-color: var(--corSecundaria);
-    font-family: var(--fontePrincipal);
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: -1px 2px 2px #000;
-    position: sticky;
-    top: 0px;
+  width: 100%;
+  min-height: 4rem;
+  padding: 0 6rem;
+  background-color: var(--corSecundaria);
+  font-family: var(--fontePrincipal);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: -1px 2px 2px #000;
+  position: sticky;
+  top: 0px;
 }
 
 header > h2 {
-    color: var(--corTextodestaque);
+  color: var(--corTextodestaque);
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li {
-    display: inline-block;
-    font-size: 1.2rem;
-    margin-left: 1.5rem;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 1.5rem;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--corTexto);
+  text-decoration: none;
+  color: var(--corTexto);
 }
 
 main {
-    font-family: var(--fontePrincipal);
-    color: var(--corTexto);
+  font-family: var(--fontePrincipal);
+  color: var(--corTexto);
 }
 
 main #sobre {
-    width: 100%;
-    height: 20rem;
-    margin-top: 5rem;
-    display: flex;
-    padding: 0 5rem;
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+  display: flex;
+  padding: 0 5rem;
 }
 
 .foto {
-    width: 25%;
-    height: 90%;
-    margin: auto;
-    background-image: url(../imagens/victor.jpg);
-    background-size: cover;
-    background-position: center center;
+  width: 25%;
+  height: 90%;
+  margin: auto;
+  background-image: url(../imagens/victor.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 .sobre-mim {
-    width: 70%;
+  width: 70%;
 }
 
-.sobre-mim  h2,
-.sobre-mim  p.local {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+.sobre-mim h2,
+.sobre-mim p.local {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
-.sobre-mim  p {
-    line-height: 1.7;
+.sobre-mim p {
+  line-height: 1.7;
 }
 
-.sobre-mim  p em {
-    color: var(--corTextodestaque);
+.sobre-mim p em {
+  color: var(--corTextodestaque);
 }
 
 section#experiencia {
-    width: 100%;
-    height: 20rem;
-    margin-top: 5rem;
-    text-align: center;
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+  text-align: center;
 }
 
 section#experiencia h2 {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 section#experiencia p a {
-    color: var(--corTextodestaque);
-    text-decoration: none;
+  color: var(--corTextodestaque);
+  text-decoration: none;
 }
 
 section#experiencia p a:hover {
-    text-decoration: underline;
-    color: var(--corTexto);
+  text-decoration: underline;
+  color: var(--corTexto);
 }
 
 section#experiencia div {
-    width: 60%;
-    margin: auto;
-    text-align: left;
-    line-height: 2;
+  width: 60%;
+  margin: auto;
+  text-align: left;
+  line-height: 2;
+}
+
+section#projetos {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+}
+
+section#projetos h1 {
+  text-align: center;
+}
+
+div.meus-projetos {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  justify-content: center;
+}
+
+div.dados-projetos {
+  margin-top: 3rem;
+  padding: 1.5rem;
+}
+
+div.imagem-projeto {
+  width: 100%;
+  height: 10rem;
+}
+
+.nome-projeto {
+  padding: 1rem 0;
+}
+
+.descricao-projeto {
+  padding-bottom: 1rem ;
+}
+
+.tec-usadas {
+  padding-bottom: 1rem;
+}
+
+.link-projeto {
+  padding: 10px;
+  max-width: 50%;
+  word-break: break-all;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--corTextodestaque);
+  border-radius: 8px;
+  background-color: var(--corSecundaria);
+}
+
+.link-projeto::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(../imagens/link.png);
+  background-size: cover;
+} 
+
+.link-projeto:hover {
+  text-decoration: underline;
+  color: var(--corTexto);
 }
