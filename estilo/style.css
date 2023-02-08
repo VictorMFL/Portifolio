@@ -161,14 +161,18 @@ div.imagem-projeto img {
 
 .nome-projeto {
   padding: 1rem 0;
+  font-size: 1rem;
 }
 
 .descricao-projeto {
   padding-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .tec-usadas {
   padding-bottom: 1rem;
+  font-size: 0.8rem;
+  color: var(--corTextodestaque);
 }
 
 .link-projeto {
