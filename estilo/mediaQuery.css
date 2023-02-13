@@ -23,13 +23,50 @@
 
   header {
     position: relative;
+    padding: 0 2.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header > nav {
+    display: none;
+  }
+
+  header > .menu-navegacao {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+  }
+
+  .menu-navegacao > nav {
+    position: fixed;
+    right: 0px;
+    top: 4rem;
+    padding: 1rem;
+    background-color: var(--corSecundaria);
+    font-family: Arial, Helvetica, sans-serif ;
+    display: none;
+  }
+
+
+  nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-left: 1.5rem;
   }
 
   .foto {
-    min-width: 10rem;
+    display: none;
   }
 
-  .sobre-mim h2{
+  .sobre-mim h2 {
     font-size: 1.2rem;
   }
 
@@ -46,77 +83,13 @@
     margin: auto;
   }
 
-  div.imagem-projeto img {
-    margin: auto;
+  div.imagem-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   div.dados-projetos {
     padding: 2rem;
   }
-}
-
-/* nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  font-size: 1.2rem;
-  margin-left: 1.5rem;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--corTexto);
-} */
-
-div.dados-projetos {
-  margin-top: 3rem;
-  padding: 1.5rem;
-}
-
-div.imagem-projeto img {
-  max-width: 90%;
-  height: 100%;
-}
-
-.nome-projeto {
-  padding: 1rem 0;
-  font-size: 1rem;
-}
-
-.descricao-projeto {
-  padding-bottom: 1rem;
-  font-size: 0.9rem;
-}
-
-.tec-usadas {
-  padding-bottom: 1rem;
-  font-size: 0.8rem;
-  color: var(--corTextodestaque);
-}
-
-.link-projeto {
-  padding: 10px;
-  max-width: 50%;
-  word-break: break-all;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--corTextodestaque);
-  border-radius: 8px;
-  background-color: var(--corSecundaria);
-}
-
-.link-projeto::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../imagens/link.png);
-  background-size: cover;
-}
-
-.link-projeto:hover {
-  text-decoration: underline;
-  color: var(--corTexto);
 }
