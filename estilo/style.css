@@ -71,8 +71,12 @@ main #sobre {
   padding: 0 5rem;
 }
 
+main #sobre p {
+  padding-left: 1rem;
+}
+
 .foto {
-  width: 25%;
+  min-width: 15rem;
   height: 90%;
   margin: auto;
   background-image: url(../imagens/victor.jpg);
