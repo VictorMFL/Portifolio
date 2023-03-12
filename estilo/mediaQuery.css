@@ -41,8 +41,8 @@
     height: 20px;
   }
 
-  .menu-navegacao > nav {
-    position: fixed;
+  nav.menu-mobile {
+    position: absolute;
     right: 0px;
     top: 4rem;
     padding: 1rem;
@@ -51,6 +51,9 @@
     display: none;
   }
 
+  nav.menu-mobile > span {
+    cursor: pointer;
+  }
 
   nav ul li {
     display: flex;

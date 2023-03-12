@@ -54,6 +54,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   font-size: 1.2rem;
+  line-height: 1.5;
   margin-left: 1.5rem;
 }
 

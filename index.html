@@ -25,10 +25,14 @@
       </nav>
       <div
         class="menu-navegacao material-symbols-outlined"
-        onclick="handleClick()"
+        onclick="abrirMenu()"
       >
         menu
+      </div>
         <nav class="menu-mobile">
+          <span class="material-symbols-outlined" onclick="fecharMenu()"
+            >close</span
+          >
           <ul>
             <li><a href="#" class="home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
@@ -36,7 +40,7 @@
             <li><a href="#projetos">Projetos</a></li>
           </ul>
         </nav>
-      </div>
+      
     </header>
 
     <main>
@@ -55,7 +59,7 @@
           </p>
           <p class="habilidades">
             <em>Biliotecas que já utilizei:</em> react-router-dom,
-            styled-components, axios e gh-pages
+            styled-components, react-icons, bootstrap e axios.
           </p>
           <p><em>Estou estudando no momento:</em> Bootstrap</p>
         </div>
@@ -71,7 +75,8 @@
             ou pelo:
             <a
               href="https://www.linkedin.com/in/victor-manoel-de-freitas-laurentino-ba81ab22a/"
-               target="_blank">Linkedin.</a
+              target="_blank"
+              >Linkedin.</a
             >
           </p>
         </div>
@@ -89,9 +94,7 @@
               <p class="descricao-projeto">
                 Projeto usando os dados de um projeto publico no figma
               </p>
-              <p class="tec-usadas">
-                Técnologia usada: HTML, CSS e JavaScript
-              </p>
+              <p class="tec-usadas">Técnologia usada: HTML, CSS e JavaScript</p>
               <a
                 href="https://victormfl.github.io/Figma/"
                 target="_blank"
@@ -192,7 +195,10 @@
 
           <div class="dados-projetos">
             <div class="imagem-projeto">
-              <img src="imagens/previsão-tempo.png" alt="projeto-previsão-tempo" />
+              <img
+                src="imagens/previsão-tempo.png"
+                alt="projeto-previsão-tempo"
+              />
             </div>
             <div>
               <p class="nome-projeto">Projeto previsão do tempo</p>
