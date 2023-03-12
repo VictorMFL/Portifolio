@@ -47,6 +47,10 @@ header > .menu-navegacao {
   display: none;
 }
 
+.menu-mobile {
+  display: none;
+}
+
 nav ul {
   list-style: none;
 }
