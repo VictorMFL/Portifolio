@@ -1,12 +1,15 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Preahvihear&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --corPrincipal: #181b1f;
-  --corSecundaria: #0e0e0e;
-  --corTextodestaque: #4972a0;
+  --background: #11071f;
+  --nav: #1a0b2e;
   --corTexto: #fff;
-
-  --fontePrincipal: Arial, Helvetica, sans-serif;
+  --corTextoDestaque: #a362ff;
+  --corNomeProjeto: #9857d3;
+  --fonteNav: "Plus Jakarta Sans";
+  --fontePadrao: "Preahvihear";
+  --fonteSecundaria: "Poppins";
 }
 
 * {
@@ -15,200 +18,513 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: var(--corPrincipal);
-  padding-top: 64px;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: var(--corTexto);
+  background-color: var(--background);
+  padding-top: 4rem;
+}
+
 header {
-  width: 100%;
-  min-height: 4rem;
-  padding: 0 6rem;
-  background-color: var(--corSecundaria);
-  font-family: var(--fontePrincipal);
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: -1px 2px 2px #000;
   position: fixed;
-  top: 0px;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--nav);
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--fonteNav);
+  z-index: 1000;
 }
 
-header > h2 {
-  color: var(--corTextodestaque);
+header > .nome {
+  font-size: 1.5rem;
+  color: var(--corTexto);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-header > .menu-navegacao {
-  display: none;
-}
-
-.menu-mobile {
-  display: none;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
+header > nav > ul > li {
   display: inline-block;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-left: 1.5rem;
+  text-decoration: none;
+  margin: 0 5rem;
 }
 
-nav ul li a {
+header > nav > ul > li > a {
   text-decoration: none;
   color: var(--corTexto);
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+header > nav > ul > li > a:hover {
+  color: #eee;
 }
 
 main {
-  font-family: var(--fontePrincipal);
-  color: var(--corTexto);
+  padding: 0 4rem;
 }
 
-main #sobre {
-  width: 100%;
-  height: 20rem;
-  margin-top: 5rem;
+main > .sobre {
+  padding-top: 3rem;
+}
+
+main > .sobre > .intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0;
+}
+
+/* Imagem do boneco e o background de fundo */
+main > .sobre > .intro > .fundo-img {
+  width: 385px;
+  height: 431px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
   display: flex;
-  padding: 0 5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
-main #sobre p {
-  padding-left: 1rem;
+.fundo-img > p {
+  position: absolute;
+  top: 0;
+  right: -8rem;
+  font-family: var(--fontePadrao);
+  font-weight: 400;
 }
 
-.foto {
-  min-width: 15rem;
-  height: 90%;
-  margin: auto;
-  background-image: url(../imagens/victor.jpg);
-  background-size: cover;
-  background-position: center center;
+.fundo-img > p::before {
+  content: "";
+  background-image: url(../imagens/seta.svg);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -55px;
+  top: 10px;
 }
 
-.sobre-mim {
-  width: 70%;
+/* Todos os textos em destaque */
+span {
+  color: var(--corTextoDestaque);
 }
 
-.sobre-mim h2,
-.sobre-mim p.local {
-  padding-left: 1rem;
-  padding-bottom: 1rem;
+/* Sobre mim */
+main > .sobre > .intro > .sobre-mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: "Preahvihear";
 }
 
-.sobre-mim p {
-  line-height: 1.7;
+.sobre-mim > p {
+  font-weight: 400;
 }
 
-.sobre-mim p em {
-  color: var(--corTextodestaque);
-}
-
-section#experiencia {
-  width: 100%;
-  height: 20rem;
-  margin-top: 5rem;
-  text-align: center;
-}
-
-section#experiencia h2 {
-  padding: 2rem;
-}
-
-section#experiencia p a {
-  color: var(--corTextodestaque);
-  text-decoration: none;
-}
-
-section#experiencia p a:hover {
+.sobre-mim > p:nth-child(1) {
   text-decoration: underline;
-  color: var(--corTexto);
 }
 
-section#experiencia div {
-  width: 60%;
-  margin: auto;
-  text-align: left;
-  line-height: 2;
+.sobre-mim > h1 {
+  font-size: 2rem;
 }
 
-section#projetos {
+.sobre-mim span {
+  color: var(--corTextoDestaque);
+  position: relative;
+}
+
+.sobre-mim span::before {
+  content: "";
+  background-image: url(../imagens/circulo.svg);
+  position: absolute;
+  left: -15px;
+  top: -1px;
+  width: 188.58px;
+  height: 57.9px;
+}
+
+/* Minha Profissão */
+main > .sobre > .profissao {
+  padding-left: 8rem;
+  padding-top: 4rem;
+  line-height: 1.5;
+  font-family: var(--fontePadrao);
+}
+
+.profissao > h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.profissao > .minha-profissao {
+  margin-bottom: 4rem;
+}
+
+.profissao > .minha-experiencia {
+  max-width: 60ch;
+}
+/* Fim Sobre mim */
+
+/* Inicio Experiência */
+main > .experiencia {
   width: 100%;
-  height: auto;
-  margin-top: 5rem;
+  height: 700px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  margin-top: 6rem;
+  font-family: var(--fontePadrao);
+  font-weight: 400;
 }
 
-section#projetos h1 {
-  text-align: center;
+.experiencia > h1 {
+  font-size: 3rem;
 }
 
-div.meus-projetos {
-  margin-top: 2rem;
+.experiencia > section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 30px;
+  margin-top: 2.5rem;
+  font-family: var(--fonteSecundaria);
+  font-weight: 500;
+}
+
+.experiencia > section > .react-router {
+  max-width: 570px;
+  height: 192.68px;
+  background: linear-gradient(
+    110.49deg,
+    #130428 19.95%,
+    #251043 67.64%,
+    #38126d 107.08%,
+    #261045 156.61%,
+    #190634 183.21%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  line-height: 1.5;
+  padding: 0.5rem;
 }
 
-div.dados-projetos {
-  margin-top: 3rem;
-  padding: 1.5rem;
+.react-router > div,
+.consumo-api > div,
+.projetos-responsivos > div,
+.perfil-github > div {
+  display: flex;
+  flex-direction: column;
 }
 
-div.imagem-projeto {
+.react-router > div > h1,
+.consumo-api > div > h1,
+.projetos-responsivos > div > h1,
+.perfil-github > div > h1 {
+  padding: 10px 0;
+}
+
+.react-router > div > p,
+.consumo-api > div > p,
+.projetos-responsivos > div > p,
+.perfil-github > div > p {
+  font-size: 0.8rem;
+}
+
+.react-router > div > a,
+.consumo-api > div > a,
+.projetos-responsivos > div > a,
+.perfil-github > div > a {
+  max-width: 119px;
+  margin-top: 1rem;
+  background: #2c1250;
+  border: 1px solid #693b93;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.experiencia > section > .consumo-api {
+  max-width: 570px;
+  height: 192.68px;
+  background: linear-gradient(
+    95.56deg,
+    #130428 0.58%,
+    #251043 16.32%,
+    #38126d 29.33%,
+    #261045 45.66%,
+    #190634 54.44%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.experiencia > section > .projetos-responsivos {
+  max-width: 570px;
+  height: 192.68px;
+  background: #2c1250;
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.experiencia > section > .perfil-github {
+  max-width: 570px;
+  height: 192.68px;
+  background: linear-gradient(
+    149.88deg,
+    #130428 37.22%,
+    #251043 70.43%,
+    #38126d 97.89%,
+    #261045 132.38%,
+    #190634 150.9%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+/* Fim Experiência */
+
+/* inicio Habilidades */
+main > .habilidades {
+  font-family: var(--fontePadrao);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habilidades > h1 {
+  font-size: 1.2rem;
+}
+
+.habilidades > .icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.habilidades > .icones > .fundo-icone {
+  width: 44px;
+  height: 44px;
+  background: #251c31;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.ligacoes {
+  position: relative;
+  height: 300px;
+  width: 400px;
+}
+
+.ligacao-1 {
+  position: absolute;
+  left: 43px;
+}
+
+.ligacao-2 {
+  position: absolute;
+  left: 108px;
+}
+
+.ligacao-3 {
+  position: absolute;
+  left: 168px;
+}
+
+.ligacao-4 {
+  position: absolute;
+  left: 196px;
+}
+
+.ligacao-5 {
+  position: absolute;
+  right: 110px;
+}
+
+.ligacao-6 {
+  position: absolute;
+  right: 45px;
+}
+
+.habilidades > .img-globo {
+  margin-top: -7rem;
+}
+/* Fim Habilidades */
+
+/* Inicio Meus Projetos */
+main > .meus-projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 10rem;
+  font-family: var(--fonteSecundaria);
+  font-weight: 600;
+  padding-top: 6rem;
 }
 
-div.imagem-projeto img {
-  max-width: 90%;
+.descricao-projeto,
+.background-projeto {
+  height: 333px;
+  margin-bottom: 9rem;
+}
+
+.descricao-projeto > a {
+  color: var(--corNomeProjeto);
+  text-decoration: none;
+}
+
+.descricao-projeto > h1 {
+  font-size: 2rem;
+}
+
+.descricao-projeto > div {
+  width: 100%;
+  height: 165px;
+  background: url(.png),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(105, 59, 147, 0.2) 0%,
+      rgba(110, 191, 244, 0.0447917) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  z-index: 1000;
+}
+
+.descricao-projeto > .link {
+  background-image: url(../imagens/icone-click.svg);
+  width: 30px;
+  height: 30px;
+  margin: 1rem;
+  display: block;
+  position: relative;
+}
+
+.descricao-projeto > .link::after {
+  content: "Ver";
+  position: absolute;
+  top: 5px;
+  left: 40px;
+}
+
+.background-projeto {
+  position: relative;
+  width: 582.88px;
+  background-color: #2b215a;
+  border-radius: 10px;
+  transform: translate(-2rem, -2rem);
+  z-index: -1;
+}
+
+.background-projeto > .contraste-fundo {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 642px;
+  height: 720px;
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+}
+
+.img-projeto {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  max-width: 100%;
   height: 100%;
 }
+/* Fim MEus Projetos */
 
-.nome-projeto {
-  padding: 1rem 0;
-  font-size: 1rem;
+footer {
+  font-family: var(--fontePadrao);
+  font-weight: 400;
+  padding: 0 4rem;
 }
 
-.descricao-projeto {
-  padding-bottom: 1rem;
-  font-size: 0.9rem;
+footer > h1 {
+  margin: 3rem 0 2rem 0;
+  font-size: 24px;
 }
 
-.tec-usadas {
-  padding-bottom: 1rem;
-  font-size: 0.8rem;
-  color: var(--corTextodestaque);
+footer > p {
+  margin-bottom: 2rem;
 }
 
-.link-projeto {
-  padding: 10px;
-  max-width: 50%;
-  word-break: break-all;
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--corTextodestaque);
-  border-radius: 8px;
-  background-color: var(--corSecundaria);
+footer > .icones-contato {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.link-projeto::before {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url(../imagens/link.png);
+.icones-contato > .icone-github {
+  width: 35px;
+  height: 35px;
+  background-image: url(../imagens/icone-github.svg);
   background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
 }
 
-.link-projeto:hover {
-  text-decoration: underline;
-  color: var(--corTexto);
+.icones-contato > .icone-insta {
+  width: 35px;
+  height: 35px;
+  background-image: url(../imagens/icone-insta.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
+}
+
+.icones-contato > .icone-linkedin {
+  width: 35px;
+  height: 35px;
+  background-image: url(../imagens/icone-linkedin.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
 }
