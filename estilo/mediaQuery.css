@@ -216,6 +216,17 @@
     font-size: 1.2rem;
   }
 
+  /* Menu Mobile */
+  header > .fechar-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  header > .menu-mobile {
+    display: block;
+    cursor: pointer;
+  }
+
   header > nav {
     position: absolute;
     top: 4rem;
@@ -225,6 +236,9 @@
     padding: 1rem;
     line-height: 1.5;
     display: none;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: animeLeft 1s forwards;
   }
 
   header > nav > ul {
@@ -241,10 +255,6 @@
 
   header > nav > ul > li > a {
     font-size: 0.8rem;
-  }
-
-  header > .menu-mobile {
-    display: block;
   }
 
   main {
@@ -341,27 +351,27 @@
     position: absolute;
     left: 20px;
   }
-  
+
   .ligacao-2 {
     position: absolute;
     left: 80px;
   }
-  
+
   .ligacao-3 {
     position: absolute;
     left: 140px;
   }
-  
+
   .ligacao-4 {
     position: absolute;
     left: 171px;
   }
-  
+
   .ligacao-5 {
     position: absolute;
     right: 75px;
   }
-  
+
   .ligacao-6 {
     position: absolute;
     right: 10px;
@@ -390,4 +400,11 @@
     );
   }
   /* Fim Meus Projetos */
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
 }

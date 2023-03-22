@@ -68,6 +68,10 @@ header > nav > ul > li > a:hover {
 }
 
 /* Menu do Celular */
+header > .fechar-menu {
+  display: none;
+}
+
 header > .menu-mobile {
   display: none;
 }
