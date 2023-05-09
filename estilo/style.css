@@ -213,7 +213,7 @@ main > .experiencia {
   font-weight: 500;
 }
 
-.experiencia > section > .react-router {
+.experiencia > section > .exp-1 {
   max-width: 570px;
   height: 192.68px;
   background: linear-gradient(
@@ -233,32 +233,32 @@ main > .experiencia {
   padding: 0.5rem;
 }
 
-.react-router > div,
-.consumo-api > div,
-.projetos-responsivos > div,
-.perfil-github > div {
+.exp-1 > div,
+.exp-2 > div,
+.exp-3 > div,
+.exp-4 > div {
   display: flex;
   flex-direction: column;
 }
 
-.react-router > div > h1,
-.consumo-api > div > h1,
-.projetos-responsivos > div > h1,
-.perfil-github > div > h1 {
+.exp-1 > div > h1,
+.exp-2 > div > h1,
+.exp-3 > div > h1,
+.exp-4 > div > h1 {
   padding: 10px 0;
 }
 
-.react-router > div > p,
-.consumo-api > div > p,
-.projetos-responsivos > div > p,
-.perfil-github > div > p {
+.exp-1 > div > p,
+.exp-2 > div > p,
+.exp-3 > div > p,
+.exp-4 > div > p {
   font-size: 0.8rem;
 }
 
-.react-router > div > a,
-.consumo-api > div > a,
-.projetos-responsivos > div > a,
-.perfil-github > div > a {
+.exp-1 > div > a,
+.exp-2 > div > a,
+.exp-3 > div > a,
+.exp-4 > div > a {
   max-width: 119px;
   margin-top: 1rem;
   background: #2c1250;
@@ -270,7 +270,7 @@ main > .experiencia {
   text-align: center;
 }
 
-.experiencia > section > .consumo-api {
+.experiencia > section > .exp-2 {
   max-width: 570px;
   height: 192.68px;
   background: linear-gradient(
@@ -290,7 +290,7 @@ main > .experiencia {
   line-height: 1.5;
 }
 
-.experiencia > section > .projetos-responsivos {
+.experiencia > section > .exp-3 {
   max-width: 570px;
   height: 192.68px;
   background: #2c1250;
@@ -303,7 +303,7 @@ main > .experiencia {
   line-height: 1.5;
 }
 
-.experiencia > section > .perfil-github {
+.experiencia > section > .exp-4 {
   max-width: 570px;
   height: 192.68px;
   background: linear-gradient(
@@ -338,13 +338,27 @@ main > .habilidades {
 }
 
 .habilidades > .icones {
+  width: 22rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
   margin-top: 4rem;
 }
 
-.habilidades > .icones > .fundo-icone {
+.icones-linha-2,
+.icones-linha-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icones-linha-1 {
+  margin-bottom: 10px;
+}
+
+.habilidades > .icones .fundo-icone {
   width: 44px;
   height: 44px;
   background: #251c31;
@@ -363,7 +377,7 @@ main > .habilidades {
 
 .ligacao-1 {
   position: absolute;
-  left: 43px;
+  left: 50px;
 }
 
 .ligacao-2 {
@@ -388,7 +402,7 @@ main > .habilidades {
 
 .ligacao-6 {
   position: absolute;
-  right: 45px;
+  right: 50px;
 }
 
 .habilidades > .img-globo {
