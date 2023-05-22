@@ -226,11 +226,70 @@ main > .experiencia {
   );
   box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
   line-height: 1.5;
   padding: 0.5rem;
+}
+
+.experiencia > section > .exp-2 {
+  max-width: 570px;
+  height: 192.68px;
+  background: linear-gradient(
+    95.56deg,
+    #130428 0.58%,
+    #251043 16.32%,
+    #38126d 29.33%,
+    #261045 45.66%,
+    #190634 54.44%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.experiencia > section > .exp-3 {
+  max-width: 570px;
+  height: 192.68px;
+  background: #2c1250;
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.experiencia > section > .exp-4 {
+  max-width: 570px;
+  height: 192.68px;
+  background: linear-gradient(
+    149.88deg,
+    #130428 37.22%,
+    #251043 70.43%,
+    #38126d 97.89%,
+    #261045 132.38%,
+    #190634 150.9%
+  );
+  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  padding: 0.5rem;
+  line-height: 1.5;
+}
+
+.exp-1 > img,
+.exp-2 > img,
+.exp-3 > img,
+.exp-4 > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .exp-1 > div,
@@ -270,58 +329,6 @@ main > .experiencia {
   text-align: center;
 }
 
-.experiencia > section > .exp-2 {
-  max-width: 570px;
-  height: 192.68px;
-  background: linear-gradient(
-    95.56deg,
-    #130428 0.58%,
-    #251043 16.32%,
-    #38126d 29.33%,
-    #261045 45.66%,
-    #190634 54.44%
-  );
-  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  line-height: 1.5;
-}
-
-.experiencia > section > .exp-3 {
-  max-width: 570px;
-  height: 192.68px;
-  background: #2c1250;
-  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  line-height: 1.5;
-}
-
-.experiencia > section > .exp-4 {
-  max-width: 570px;
-  height: 192.68px;
-  background: linear-gradient(
-    149.88deg,
-    #130428 37.22%,
-    #251043 70.43%,
-    #38126d 97.89%,
-    #261045 132.38%,
-    #190634 150.9%
-  );
-  box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  line-height: 1.5;
-}
 /* Fim Experiência */
 
 /* inicio Habilidades */

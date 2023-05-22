@@ -37,22 +37,29 @@
     font-size: 2.3rem;
   }
 
-  .experiencia > section > .react-router {
-    line-height: 1.5;
+  .experiencia > section > .exp-1 {
+    grid-template-columns: 8rem 1fr;
   }
 
-  .react-router > div > h1,
-  .consumo-api > div > h1,
-  .projetos-responsivos > div > h1,
-  .perfil-github > div > h1 {
+  .experiencia > section > .exp-1,
+  .experiencia > section > .exp-2,
+  .experiencia > section > .exp-3,
+  .experiencia > section > .exp-4 {
+    grid-template-columns: 8rem 1fr;
+  }
+
+  .exp-1 > div > h1,
+  .exp-2 > div > h1,
+  .exp-3 > div > h1,
+  .exp-4 > div > h1 {
     padding: 5px 0;
     font-size: 1.2rem;
   }
 
-  .react-router > div > a,
-  .consumo-api > div > a,
-  .projetos-responsivos > div > a,
-  .perfil-github > div > a {
+  .exp-1 > div > a,
+  .exp-2 > div > a,
+  .exp-3 > div > a,
+  .exp-4 > div > a {
     margin-top: 0.7rem;
   }
   /* Fim Experiência */
@@ -137,26 +144,10 @@
     grid-template-columns: 1fr;
   }
 
-  .experiencia > section > .react-router {
-    justify-content: flex-start;
-  }
-
-  .experiencia > section > .consumo-api {
-    justify-content: flex-start;
-  }
-
-  .experiencia > section > .projetos-responsivos {
-    justify-content: flex-start;
-  }
-
-  .experiencia > section > .perfil-github {
-    justify-content: flex-start;
-  }
-
-  .react-router > div,
-  .consumo-api > div,
-  .projetos-responsivos > div,
-  .perfil-github > div {
+  .exp-1 > div,
+  .exp-2 > div,
+  .exp-3 > div,
+  .exp-4 > div {
     padding: 0.7rem;
   }
   /* Fim Experiência */
@@ -314,6 +305,14 @@
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
   }
+
+  .experiencia > section > .exp-1,
+  .experiencia > section > .exp-2,
+  .experiencia > section > .exp-3,
+  .experiencia > section > .exp-4 {
+    grid-template-columns: 1fr;
+  }
+
   .experiencia > section > .exp-1 img {
     display: none;
   }
