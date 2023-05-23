@@ -34,7 +34,7 @@ export default function MyProjects() {
       <div className={`${styles.background_project} ${styles.background_1}`}>
         <div className={styles.background_contrast}></div>
         <img
-          src="/images/catalogo-filmes.png"
+          src="images/catalogo-filmes.png"
           alt="Projeto catalogo-filmes"
           className={styles.img_project}
         />

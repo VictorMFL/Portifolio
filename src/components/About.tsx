@@ -14,13 +14,13 @@ export default function About() {
     <section className={`${styles.about} ${fontAbout.className}`}>
       <div className={styles.intro}>
         <div className={styles.background_img}>
-          <Image src='/images/seta.svg' alt='uma seta apontando para o boneco' width={50} height={50} className={styles.arrow} />
+          <Image src='images/seta.svg' alt='uma seta apontando para o boneco' width={50} height={50} className={styles.arrow} />
           <p>
             Hello! Eu sou <span>Victor Manoel</span>
           </p>
 
           <Image
-            src="/images/me.png"
+            src="images/me.png"
             alt="imagem de um boneco com um computador"
             width={250}
             height={250}
