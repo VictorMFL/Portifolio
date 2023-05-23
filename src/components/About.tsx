@@ -19,11 +19,9 @@ export default function About() {
             Hello! Eu sou <span>Victor Manoel</span>
           </p>
 
-          <Image
+          <img
             src="images/Me.png"
             alt="imagem de um boneco com um computador"
-            width={250}
-            height={250}
           />
         </div>
 

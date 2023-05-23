@@ -43,7 +43,7 @@
 }
 
 .description_project > .link {
-  background-image: url(/images/icone-click.svg);
+  background-image: url(../../public/images/icone-click.svg);
   width: 30px;
   height: 30px;
   margin: 1rem;
