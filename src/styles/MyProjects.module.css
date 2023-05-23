@@ -154,8 +154,8 @@
   }
 
   .description_project > div {
-    height: auto;
-    padding: 10px;
+    min-height: 100px;
+    padding: 1rem;
   }
 
   .background_project > .background_contrast {
