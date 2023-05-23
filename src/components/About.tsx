@@ -20,7 +20,7 @@ export default function About() {
           </p>
 
           <Image
-            src="images/me.png"
+            src="images/Me.png"
             alt="imagem de um boneco com um computador"
             width={250}
             height={250}
