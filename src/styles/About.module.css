@@ -1,0 +1,176 @@
+.about {
+  padding-top: 3rem;
+}
+
+.about > .intro {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin: 0;
+}
+
+/* Imagem do boneco e o background de fundo */
+.about > .intro > .background_img {
+  width: 385px;
+  height: 431px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #763cac 0%,
+    rgba(50, 15, 133, 0) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.background_img > p {
+  position: absolute;
+  top: 0;
+  right: -8rem;
+  font-weight: 400;
+}
+
+.arrow {
+  position: absolute;
+  right: 5.5rem;
+  top: 5px;
+}
+
+/* sobre mim */
+.about > .intro > .about_me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.about_me > p {
+  font-weight: 400;
+}
+
+.about_me > p:nth-child(1) {
+  text-decoration: underline;
+}
+
+.about_me > h1 {
+  font-size: 2.2rem;
+}
+
+.about_me span {
+  color: var(--corTextoDestaque);
+  position: relative;
+}
+
+.about_me span::before {
+  content: "";
+  background-image: url(../../public/images/circulo.svg);
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  width: 188.58px;
+  height: 57.9px;
+}
+
+/* Minha Profissão */
+.about > .profession {
+  padding-left: 8rem;
+  padding-top: 4rem;
+  line-height: 1.5;
+}
+
+.profession > h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.profession > .my_profission {
+  margin-bottom: 4rem;
+}
+
+.profession > .my_profission {
+  max-width: 60ch;
+}
+
+@media (max-width: 949px) {
+  .about {
+    padding-top: 2rem;
+  }
+
+  .about_me > h1 {
+    font-size: 2rem;
+  }
+
+  .profession > h1 {
+    font-size: 2.2rem;
+  }
+
+  .profession > .my_profission {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .about > .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about > .intro > .background_img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about > .profession {
+    padding-left: 4rem;
+  }
+
+  .background_img > p {
+    right: -3rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .arrow {
+    right: 30%;
+    top: 15px;
+  }
+
+  .about > .intro > .background_img {
+    width: 100%;
+    height: 431px;
+  }
+
+  .background_img > p {
+    right: 1rem;
+  }
+
+  .about > h1 {
+    font-size: 1.8rem;
+  }
+
+  .about_me > h1 {
+    font-size: 1.8rem;
+  }
+
+  .about_me span::before {
+    left: -20px;
+    top: -10px;
+  }
+
+  .about > .profession {
+    padding-left: 0;
+    padding-top: 4rem;
+    line-height: 1.5;
+  }
+
+  .profession > p {
+    margin-bottom: 1rem;
+  }
+
+  .profession > h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}

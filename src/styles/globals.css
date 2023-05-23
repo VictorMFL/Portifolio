@@ -1,0 +1,45 @@
+:root {
+  --background: #11071f;
+  --nav: #1a0b2e;
+  --corTexto: #fff;
+  --corTextoDestaque: #a362ff;
+  --corNomeProjeto: #9857d3;
+  --fonteSecundaria: "Poppins";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--corTexto);
+  background-color: var(--background);
+  padding-top: 4rem;
+}
+
+main {
+  padding: 0 4rem;
+}
+
+/* Todos os textos em destaque */
+span {
+  color: var(--corTextoDestaque);
+}
+
+@media (max-width: 949px) {
+  main {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  main {
+    padding: 0 1.2rem;
+  }
+}

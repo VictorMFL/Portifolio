@@ -1,0 +1,83 @@
+.footer {
+  font-weight: 400;
+  padding: 0 4rem;
+}
+
+.footer > h1 {
+  margin: 3rem 0 2rem 0;
+  font-size: 24px;
+}
+
+.footer > p {
+  margin-bottom: 2rem;
+}
+
+.footer > .icons_contact {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icons_contact > .icon_github {
+  width: 35px;
+  height: 35px;
+  background-image: url(/images/icone-github.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
+}
+
+.icons_contact > .icon_insta {
+  width: 35px;
+  height: 35px;
+  background-image: url(/images/icone-insta.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
+}
+
+.icons_contact > .icon_linkedin {
+  width: 35px;
+  height: 35px;
+  background-image: url(/images/icone-linkedin.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 2rem;
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 0 3rem;
+  }
+
+  .footer > h1 {
+    margin: 0rem 0 2rem 0;
+  }
+
+  .icons_contact {
+    width: 100%;
+  }
+}
+
+@media(max-width:550px) {
+  .footer {
+    padding: 0;
+  }
+
+  .icons_contact {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .icons_contact > .icon_github {
+    margin-right: 10px;
+  }
+  
+  .icons_contact > .icon_insta {
+    margin-right: 10px;
+  }
+  
+  .icons_contact > .icon_linkedin {
+    margin-right: 10px;
+  }
+}
