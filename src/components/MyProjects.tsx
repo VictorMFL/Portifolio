@@ -2,14 +2,14 @@ import styles from "../styles/MyProjects.module.css";
 
 import { Poppins } from "next/font/google";
 
-const fontMyProjects = Poppins({
+const fontPoppins = Poppins({
   weight: "600",
   subsets: ["latin"],
 });
 
 export default function MyProjects() {
   return (
-    <section className={`${styles.my_projects} ${fontMyProjects.className}`} id="projetos">
+    <section className={`${styles.my_projects} ${fontPoppins.className}`} id="projetos">
       {/* Projeto 1 */}
       <div className={styles.description_project}>
         <a

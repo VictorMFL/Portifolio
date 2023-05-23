@@ -3,25 +3,25 @@ import styles from "../styles/Experience.module.css";
 
 import { Lato, Poppins } from "next/font/google";
 
-const fontAbout = Lato({
+const fontLato = Lato({
   weight: "400",
   subsets: ["latin"],
 });
 
-const fontExperience = Poppins({
+const fontPoppins = Poppins({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
 export default function Experience() {
   return (
-    <section className={`${styles.experience} ${fontAbout.className}`}>
+    <section className={`${styles.experience} ${fontLato.className}`}>
       <h1>Minhas Experiências</h1>
       <p>
         Ainda não tenho experiência profissional. Mas tenho alguns requisitos
         que eu considero profissional.
       </p>
-      <section className={fontExperience.className}>
+      <section className={fontPoppins.className}>
         <div className={styles.exp_1}>
           <Image
             src="images/estrela.svg"

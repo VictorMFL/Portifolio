@@ -4,14 +4,14 @@ import Image from "next/image";
 
 import { Lato } from "next/font/google";
 
-const fontAbout = Lato({ 
+const fontLato = Lato({ 
   weight: "400",
   subsets: ["latin"],
 });
 
 export default function About() {
   return (
-    <section className={`${styles.about} ${fontAbout.className}`}>
+    <section className={`${styles.about} ${fontLato.className}`}>
       <div className={styles.intro}>
         <div className={styles.background_img}>
           <Image src='images/seta.svg' alt='uma seta apontando para o boneco' width={50} height={50} className={styles.arrow} />
