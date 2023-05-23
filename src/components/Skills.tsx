@@ -13,7 +13,7 @@ export default function Skills() {
       <h1>
         Aqui estão algumas das minhas principais <span>habilidades.</span>
       </h1>
-      <img src="/images/globo.svg" alt="Globo com minhas habilidades" />
+      <img src="images/globo.svg" alt="Globo com minhas habilidades" />
     </section>
   );
 }
