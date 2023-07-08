@@ -311,7 +311,7 @@ export default function MyProjects() {
       <div className={`${styles.background_project} ${styles.background_10}`}>
         <div className={styles.background_contrast}></div>
         <img
-          src="images/Formulario.png"
+          src="images/Formulario_sass.png"
           alt="Projeto Formulário SASS"
           className={styles.img_project}
         />
