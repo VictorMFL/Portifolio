@@ -53,7 +53,7 @@ export default function About() {
           <span>
             JavaScript, TypeScript, ReactJS, Next-js, Consumo de APIs e Testes
             unitários. Bibliotecas: react-router-dom, styled-components,
-            tailwind, bootstrap e axios.
+            tailwind, bootstrap, axios, Material-UI, SASS e Jquery.
           </span>
         </p>
       </div>
