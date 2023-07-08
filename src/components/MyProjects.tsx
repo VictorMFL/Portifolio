@@ -9,7 +9,10 @@ const fontPoppins = Poppins({
 
 export default function MyProjects() {
   return (
-    <section className={`${styles.my_projects} ${fontPoppins.className}`} id="projetos">
+    <section
+      className={`${styles.my_projects} ${fontPoppins.className}`}
+      id="projetos"
+    >
       {/* Projeto 1 */}
       <div className={styles.description_project}>
         <a
@@ -309,13 +312,13 @@ export default function MyProjects() {
         <div className={styles.background_contrast}></div>
         <img
           src="images/Formulario.png"
-          alt="Projeto Formulário"
+          alt="Projeto Formulário SASS"
           className={styles.img_project}
         />
       </div>
       <div className={styles.description_project}>
         <a
-          href="https://victormfl.github.io/formulario/"
+          href="https://victormfl.github.io/formulario_sass/"
           target="_blank
           "
         >
@@ -324,13 +327,10 @@ export default function MyProjects() {
         <h1>Projeto Formulário</h1>
 
         <div>
-          <p>
-            Projeto feito com React.Js. Desafio 11 do boracodar. Técnologia
-            usada: Vite, ReactJs e react-router-dom.
-          </p>
+          <p>Formulário feito com React + Typescript + Sass.</p>
         </div>
         <a
-          href="https://github.com/victormfl/formulario/"
+          href="https://github.com/victormfl/formulario_sass/"
           target="_blank
           "
           className={styles.link}
