@@ -52,7 +52,7 @@ export default function MyProjects() {
         description="Projeto usando os dados de um projeto público no figma. Técnologia usada: HTML, CSS e JavaScript."
         linkWebsite="https://victormfl.github.io/Figma/"
         linkGithub="https://github.com/victormfl/Figma/"
-        odd={true}
+        odd={false}
       />
 
       {/* Projeto 5 */}
@@ -63,7 +63,7 @@ export default function MyProjects() {
         Origamid. Técnologia usada: Vite, ReactJs, react-router-dom e CSS-module."
         linkWebsite="https://victormfl.github.io/Dogs/"
         linkGithub="https://github.com/victormfl/Dogs/"
-        odd={false}
+        odd={true}
       />
 
       {/* Projeto 6 */}
@@ -74,7 +74,7 @@ export default function MyProjects() {
         acordo com o nome. Técnologia usada: Vite, ReactJs, Styled-components, axios e react-router-dom."
         linkWebsite="https://victormfl.github.io/api-github/"
         linkGithub="https://github.com/victormfl/api-github/"
-        odd={true}
+        odd={false}
       />
 
       {/* Projeto 7 */}
@@ -84,7 +84,7 @@ export default function MyProjects() {
         description="Projeto feito utilizando a biblioteca Bootstrap."
         linkWebsite="https://victormfl.github.io/Bootstrap/"
         linkGithub="https://github.com/victormfl/Bootstrap/"
-        odd={false}
+        odd={true}
       />
 
       {/* Projeto 8 */}
@@ -95,7 +95,7 @@ export default function MyProjects() {
         react-icons, Figma e react-router-dom."
         linkWebsite="https://victormfl.github.io/Kanban/"
         linkGithub="https://github.com/victormfl/Kanban/"
-        odd={true}
+        odd={false}
       />
 
       {/* Projeto 9 */}
@@ -106,7 +106,7 @@ export default function MyProjects() {
         TypeScript e Tailwind."
         linkWebsite="https://victormfl.github.io/clone_amazon/"
         linkGithub="https://github.com/victormfl/clone_amazon/"
-        odd={false}
+        odd={true}
       />
 
       {/* Projeto 10 */}
@@ -116,7 +116,7 @@ export default function MyProjects() {
         description="Formulário feito com React + Typescript + Sass."
         linkWebsite="https://victormfl.github.io/formulario_sass/"
         linkGithub="https://github.com/victormfl/formulario_sass/"
-        odd={true}
+        odd={false}
       />
     </section>
   );
