@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { Lato } from "next/font/google";
 
-const fontLato = Lato({ 
+const fontLato = Lato({
   weight: "400",
   subsets: ["latin"],
 });
@@ -14,7 +14,13 @@ export default function About() {
     <section className={`${styles.about} ${fontLato.className}`}>
       <div className={styles.intro}>
         <div className={styles.background_img}>
-          <Image src='images/seta.svg' alt='uma seta apontando para o boneco' width={50} height={50} className={styles.arrow} />
+          <Image
+            src="images/seta.svg"
+            alt="uma seta apontando para o boneco"
+            width={50}
+            height={50}
+            className={styles.arrow}
+          />
           <p>
             Hello! Eu sou <span>Victor Manoel</span>
           </p>
@@ -46,14 +52,15 @@ export default function About() {
           Apaixonado por programação e por solucionar problemas, prezando sempre
           pela pontuidade, comunicação e trabalho em equipe. Comecei minha
           trajetória em programação pelo curso em vídeo, aprendendo sobre{" "}
-          <span>HTML5 e CSS3</span>, desde então
-          desenvolvi vários projetos, tanto pessoais quanto os disponíveis em
-          cursos. Fiz diversos outros cursos voltados para a área de front-end,
-          eles são:{" "}
+          <span>HTML5 e CSS3</span>, desde então desenvolvi vários projetos,
+          tanto pessoais quanto os disponíveis em cursos. Fiz diversos outros
+          cursos voltados para a área de front-end, eles são:{" "}
           <span>
-            JavaScript, TypeScript, ReactJS, Next-js, Consumo de APIs e Testes
-            unitários. Bibliotecas: react-router-dom, styled-components,
-            tailwind, bootstrap, axios, Material-UI, SASS e Jquery.
+            JavaScript, TypeScript, ReactJS, Next-js, Consumo de APIs(get, post, put, delete e patch), Testes
+            unitários(Jest e Testing Library), react-router-dom,
+            styled-components, Tailwind, Bootstrap, Axios, Material-UI, SASS,
+            Jquery, Redux toolkit, Node-js, MongoDB, Express, React Native e
+            Figma.
           </span>
         </p>
       </div>
