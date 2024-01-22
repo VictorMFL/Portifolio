@@ -17,10 +17,6 @@ export default function Experience() {
   return (
     <section className={`${styles.experience} ${fontLato.className}`}>
       <h1>Minhas Experiências</h1>
-      <p>
-        Ainda não tenho experiência profissional. Mas tenho alguns requisitos
-        que eu considero profissional.
-      </p>
       <section className={fontPoppins.className}>
         <div className={styles.exp_1}>
           <Image
@@ -31,7 +27,7 @@ export default function Experience() {
           />
           <div>
             <h1>React Js</h1>
-            <p>Utilizo ReactJs em grande parte dos meus projetos.</p>
+            <p>Utilizo Next-js/ReactJs em grande parte dos meus projetos.</p>
             <a href="#projetos">Ver</a>
           </div>
         </div>
@@ -44,8 +40,8 @@ export default function Experience() {
             height={120}
           />
           <div>
-            <h1>Consumo de API</h1>
-            <p>Tenhos experiência em consumo de API Restful.</p>
+            <h1>Back-End</h1>
+            <p>Tenho conhecimento em Node-js e Java, criando aplicações back-end.</p>
             <a href="#projetos">Ver</a>
           </div>
         </div>
