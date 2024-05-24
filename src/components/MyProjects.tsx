@@ -17,18 +17,18 @@ export default function MyProjects() {
     >
       {/* Projeto 1 */}
       <IndividualProject
-        title="API_Poke"
-        srcImage="images/API_Poke.png"
-        description="Projeto feito para você ver os dados de Pokémons, do universo de Pokémon."
-        linkWebsite="https://victormfl.github.io/API_Poke/"
-        linkGithub="https://github.com/victormfl/API_Poke/"
+        title="Academy"
+        srcImage="images/projetos/academy.png"
+        description="Site para uma academia usando o scroll para fazer animações."
+        linkWebsite="https://academy-virid.vercel.app"
+        linkGithub="https://github.com/VictorMFL/academy"
         odd={true}
       />
 
       {/* Projeto 2 */}
       <IndividualProject
         title="Catalogo Filmes"
-        srcImage="images/catalogo-filmes.png"
+        srcImage="images/projetos/catalogo-filmes.png"
         description="Projeto para você ter acesso a dados de filmes já lançados."
         linkWebsite="https://victormfl.github.io/catalogo-filmes/"
         linkGithub="https://github.com/victormfl/catalogo-filmes/"
@@ -38,7 +38,7 @@ export default function MyProjects() {
       {/* Projeto 3 */}
       <IndividualProject
         title="PokeNext"
-        srcImage="images/Next.png"
+        srcImage="images/projetos/PokeNext.png"
         description="Projeto feito com a Next-js utilizando uma API que fornece dados de pokémons."
         linkWebsite="https://beautiful-clafoutis-8d4272.netlify.app/"
         linkGithub="https://github.com/victormfl/PokeNext/"
@@ -48,7 +48,7 @@ export default function MyProjects() {
       {/* Projeto 4 */}
       <IndividualProject
         title="Figma"
-        srcImage="images/Figma.png"
+        srcImage="images/projetos/Figma.png"
         description="Projeto usando os dados de um projeto público no figma. Técnologia usada: HTML, CSS e JavaScript."
         linkWebsite="https://victormfl.github.io/Figma/"
         linkGithub="https://github.com/victormfl/Figma/"
@@ -58,7 +58,7 @@ export default function MyProjects() {
       {/* Projeto 5 */}
       <IndividualProject
         title="Dogs"
-        srcImage="images/Dogs.png"
+        srcImage="images/projetos/Dogs.png"
         description="Dogs rede-social de cachorro, Projeto feito com Vite+React usando a api disponível no curso da
         Origamid. Técnologia usada: Vite, ReactJs, react-router-dom e CSS-module."
         linkWebsite="https://victormfl.github.io/Dogs/"
@@ -69,7 +69,7 @@ export default function MyProjects() {
       {/* Projeto 6 */}
       <IndividualProject
         title="API Github"
-        srcImage="images/api-github.jpg"
+        srcImage="images/projetos/api-github.jpg"
         description="Projeto feito com Vite+React utilizando a API do GitHub para acessar os dados de um usuário de
         acordo com o nome. Técnologia usada: Vite, ReactJs, Styled-components, axios e react-router-dom."
         linkWebsite="https://victormfl.github.io/api-github/"
@@ -80,7 +80,7 @@ export default function MyProjects() {
       {/* Projeto 7 */}
       <IndividualProject
         title="Bootstrap"
-        srcImage="images/Bootstrap.png"
+        srcImage="images/projetos/Bootstrap.png"
         description="Projeto feito utilizando a biblioteca Bootstrap."
         linkWebsite="https://victormfl.github.io/Bootstrap/"
         linkGithub="https://github.com/victormfl/Bootstrap/"
@@ -90,7 +90,7 @@ export default function MyProjects() {
       {/* Projeto 8 */}
       <IndividualProject
         title="Kanban"
-        srcImage="images/Kanban.png"
+        srcImage="images/projetos/Kanban.png"
         description="Site para anotar a sua lista de afazeres do dia, semana ou mês. Técnologia usada: Vite, ReactJs,
         react-icons, Figma e react-router-dom."
         linkWebsite="https://victormfl.github.io/Kanban/"
@@ -101,7 +101,7 @@ export default function MyProjects() {
       {/* Projeto 9 */}
       <IndividualProject
         title="Clone da Amazon"
-        srcImage="images/clone_amazon.png"
+        srcImage="images/projetos/clone_amazon.png"
         description="Projeto feito junto com o professor Matheus do curso da Udemy. Técnologia usada: Vite, ReactJs, 
         TypeScript e Tailwind."
         linkWebsite="https://victormfl.github.io/clone_amazon/"
@@ -112,7 +112,7 @@ export default function MyProjects() {
       {/* Projeto 10 */}
       <IndividualProject
         title="Formulário"
-        srcImage="images/Formulario_sass.png"
+        srcImage="images/projetos/Formulario_sass.png"
         description="Formulário feito com React + Typescript + Sass."
         linkWebsite="https://victormfl.github.io/formulario_sass/"
         linkGithub="https://github.com/victormfl/formulario_sass/"

@@ -41,7 +41,10 @@ export default function Experience() {
           />
           <div>
             <h1>Back-End</h1>
-            <p>Tenho conhecimento em Node-js e Java, criando aplicações back-end.</p>
+            <p>
+              Tenho conhecimento em Node-js e Python, criando aplicações
+              back-end.
+            </p>
             <a href="#projetos">Ver</a>
           </div>
         </div>
